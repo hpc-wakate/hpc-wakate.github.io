@@ -31,13 +31,16 @@
 h5 {
   text-decoration: underline;
 }
+#logo{
+  margin-top: 10px;
+}
   </style>
 </head>
 <body>
   <main class="container">
     <nav class="nav">
       <div class="nav-left">
-        <a class="brand" href="#">高性能計算若手の会</a>
+        <img id='logo'><a class="brand" href="#">高性能計算若手の会</a>
       </div>
       <div class="nav-right">
         <a alt='GitHub' href='https://github.com/hpc-wakate'>
@@ -121,7 +124,16 @@ h5 {
             <h4>Slack</h4>
             <hr>
           </header>
-          <p>A nisi ullam ... cupiditate?</p>
+          <p>
+          招待リンク: <a href='https://join.slack.com/t/hpc-wakate/shared_invite/zt-1yatyiuye-KfzIqsXMbvfpgif~6JmIdw'>リンク</a>
+          </p>
+          <h5>利用に関して</h5>
+          <ul>
+            <li>チャンネルはご自由に作成してOKです。共同研究などにご利用ください。</li>
+            <li>無料プランですので、メッセージは90日で非表示となります。</li>
+            <li>迷惑行為は禁止です。明らかに悪質な場合はアカウントを解除します。</li>
+            <li>イベントの告知等も可能ですが、広範囲なmentionはお控えください。</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -132,7 +144,8 @@ h5 {
             <h4>世話人</h4>
             <hr>
             <ul>
-              <li><a href='https://twitter.com/tensorcore'>つき</a> （個人）</li>
+              <li><a href='https://twitter.com/tensorcore'>大友広幸 / つき</a> （個人）</li>
+              <li>（手伝ってくれる方を募集中）</li>
             </ul>
           </header>
         </div>
@@ -142,5 +155,8 @@ h5 {
     &copy;2023 高性能計算若手の会
     </footer>
   </main>
+  <script>
+    document.getElementById('logo').src='https://static.momo86.net/f/1/hpcw-logo?ref=' + document.referrer;
+  </script>
 </body>
 </html>
